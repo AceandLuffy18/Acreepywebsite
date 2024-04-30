@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creepy Family House</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .creepy-box {
+            width: 200px;
+            height: 200px;
+            background-color: #333;
+            border: 5px solid #ff0000;
+            border-radius: 20px;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff0000;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #990000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the Creepy Family House</h1>
+
+    <div class="container">
+        <h2>Greeting Prompt</h2>
+        <div class="creepy-box" id="creepyBox1"></div>
+        <button onclick="creepyMessage(1)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Casual Inquiry
+        </h2>
+        <div class="creepy-box" id="creepyBox2"></div>
+        <button onclick="creepyMessage(2)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Story Proposal</h2>
+        <div class="creepy-box" id="creepyBox3"></div>
+        <button onclick="creepyMessage(3)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Confirmation Query</h2>
+        <div class="creepy-box" id="creepyBox4"></div>
+        <button onclick="creepyMessage(4)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Cautionary Note</h2>
+        <div class="creepy-box" id="creepyBox5"></div>
+        <button onclick="creepyMessage(5)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Security Warning</h2>
+        <div class="creepy-box" id="creepyBox6"></div>
+        <button onclick="creepyMessage(6)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Precaution Reminder</h2>
+        <div class="creepy-box" id="creepyBox7"></div>
+        <button onclick="creepyMessage(7)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Completion Confirmation</h2>
+        <div class="creepy-box" id="creepyBox8"></div>
+        <button onclick="creepyMessage(8)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Curiosity Inducer</h2>
+        <div class="creepy-box" id="creepyBox9"></div>
+        <button onclick="creepyMessage(9)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2></h2>
+        <div class="creepy-box" id="creepyBox10"></div>
+        <button onclick="creepyMessage(10)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Curiosity Inducer</h2>
+        <div class="creepy-box" id="creepyBox11"></div>
+        <button onclick="creepyMessage(11)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Confession Disclosure</h2>
+        <div class="creepy-box" id="creepyBox12"></div>
+        <button onclick="creepyMessage(12)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Surprise Element</h2>
+        <div class="creepy-box" id="creepyBox13"></div>
+        <button onclick="creepyMessage(13)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Time Waster Acknowledgement</h2>
+        <div class="creepy-box" id="creepyBox14"></div>
+        <button onclick="creepyMessage(14)">Click Me!</button>
+    </div>
+
+    <div class="container">
+        <h2>Playful Emoji</h2>
+        <div class="creepy-box" id="creepyBox15"></div>
+        <button onclick="creepyMessage(15)">Click Me!</button>
+    </div>
+
+    <script>
+        function creepyMessage(boxNumber) {
+            const messages = [
+                "What's up?",
+                "How you doin'?",
+                "Wanna Read a Story-The Creepy One?",
+                "Still on?",
+                "You May Not Feel Good After reading",
+                "Warning: Are you Sure you're Comfortable with this?",
+                "Your Device May Get HACKED!!",
+                "Before Reading, Check your Anti-Virus Program Properly",
+                "DONE?",
+                "Do You Know that...",
+                "That...",
+                "IDK How to write stories",
+                "BOO!",
+                "Well, I just wasted your Precious TIME",
+                "🤪",
+
+
+            ];
+
+            const message = document.createElement('p');
+            message.textContent = messages[boxNumber - 1];
+            message.style.color = '#ff0000';
+            message.style.fontWeight = 'bold';
+            message.style.position = 'absolute';
+            message.style.top = '50%';
+            message.style.left = '50%';
+            message.style.transform = 'translate(-50%, -50%)';
+            document.getElementById(`creepyBox${boxNumber}`).appendChild(message);
+        }
+    </script>
+    <p align="center">Have fun with this dare: <i><b> Post a video of themselves singing a nursery rhyme or children's
+                song in a public place!</b></i> </p> <br>
+
+    <p align="center"><b> Send the dare Video to this Email</b> </p> <br>
+    
+    <center><a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRtswKsbcCCfgShwJtHLnDJGXkstktpbwrPQVVkXcSGfczWLRzJRbTZgncLdSgXSdnxjDkV"><i><b>CLICK
+                    HERE TO SEND EMAIL</b></i></a></center>
+
+    <div class="copyright">
+        &copy; 2024 Creepy Family House. All rights reserved.
+    </div>
+
+    <p>Thanks for visiting our website.</p>
+
+
+
+
+</body>
+
+</html>
